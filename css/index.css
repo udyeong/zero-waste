@@ -12,12 +12,11 @@ header>h1 {
     margin-right: 40px;
     font-size: 0;
 }
-#menu_bar>div{
+#menu_bar>img{
     width: 20px;
-    height: 3px;
-    background-color: black;
-    margin: 3px 0;
+    height: 20px;
     display: none;
+    /* background-color: #333; */
 }
 #nav_wrap {
     width: 100%;
@@ -44,13 +43,13 @@ header>h1 {
     margin-left: 10px;
 }
 .search>a{
-    background-image: url(../img/icon/search.png    );
+    background-image: url(../img/icon/search.svg);
 }
 .cart>a{
-    background-image: url(../img/icon/cart.png    );
+    background-image: url(../img/icon/cart.svg);
 }
 .mypage>a{
-    background-image: url(../img/icon/mypage.png    );
+    background-image: url(../img/icon/mypage.svg);
 }
 /* header end */
 
@@ -98,6 +97,8 @@ header>h1 {
     padding-bottom: 80px;
 }
 .tit_wrap {
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
     width: 100%;
     padding: 7px 0;
     align-items: center;
@@ -146,13 +147,13 @@ header>h1 {
 }
 
 .tbox_wrap{
+    padding-top: 11px;
+    padding-bottom: 27px;
     width: 100%;
     justify-content: space-between;
 }
 .tbox_wrap>.item_tbox {
     width: 90%;
-    padding-top: 11px;
-    padding-bottom: 27px;
     line-height: 33px;
 }
 .item_tbox>p{
@@ -176,9 +177,12 @@ header>h1 {
     color: gray;
 }
 .heart{
-    padding-top: 11px;
-    font-size: 20px;
-    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin: 6px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/icon/heart.svg);
 }
 .h_banner{
     width: calc((100% - 48px) * 0.25);
@@ -281,17 +285,9 @@ header>h1 {
 }
 /* sec3,5 slide*/
 
-#sec7>article>div {
-    font-size: 0;
-}
-#sec7 img{
-    width: 100%;
-}
-/* sec7-banner*/
-
-#sec8{
+#sec7{
     gap: 16px;
-    padding: 20px 0;
+    padding: 20px 0 80px;
 }
 .review{
     flex: 1;
@@ -313,6 +309,15 @@ header>h1 {
 .review>figcaption>p:nth-child(2){
     font-size: 1.1rem;
 }
+/* sec8-review end */
+
+#sec8>article>div {
+    font-size: 0;
+}
+#sec8 img{
+    width: 100%;
+}
+/* sec8-banner end */
 
 footer{
     background-color: rgb(150, 150, 150);    
@@ -402,7 +407,7 @@ footer{
     .slide>h2 {
     font-size: 3rem;
     }
-    #sec8{
+    #sec7{
         flex-wrap: wrap;
         gap: 16px;
     }
@@ -429,7 +434,7 @@ footer{
         justify-content: space-between;
         padding: 10px 10px;
     }
-    #menu_bar>div{
+    #menu_bar>img{
         display: block;
         margin-right: 10px;
     }
@@ -465,11 +470,11 @@ footer{
         display: none;
     }
     .item_tbox>p{
-    display: block;
-    overflow: unset;
-    white-space: wrap;
-    text-overflow: ellipsis;
-    line-height: 22px;
+        display: block;
+        /* overflow: unset;
+        white-space: wrap; */
+        text-overflow: ellipsis;
+        line-height: 22px;
     }
     .heart{
         display: none;
