@@ -1,0 +1,12 @@
+$(document).ready(function(){
+  $('.heart').click(function(){
+    $(this).toggleClass('heart_r');
+  });
+  $('.search_bar').hide();
+  $('.search').click(function(){
+    $('.search_bar').toggle()
+  });
+  $('#menu_bar').click(function(){
+    $('#ham_menu').slideToggle()
+  });
+});
